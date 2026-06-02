@@ -20,6 +20,4 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'pub_date', 'category', 'is_published', 'created_at')
     list_editable = ('is_published',)
     list_filter = ('is_published', 'category')
-    search_fields = ('title', 'text')from django.contrib import admin
-
-# Register your models here.
+    search_fields = ('title', 'text')

@@ -1,0 +1,9 @@
+<h1>Category: {{ category.title }}</h1>
+<p>{{ category.description }}</p>
+{% for post in post_list %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text|truncatewords:50 }}</p>
+    <p>Date: {{ post.pub_date|date:"d.m.Y" }}</p>
+{% empty %}
+    <p>No posts in this category</p>
+{% endfor %}

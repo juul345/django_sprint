@@ -1,0 +1,6 @@
+<h1>Post detail</h1>
+<h2>{{ post.title }}</h2>
+<p>{{ post.text }}</p>
+<p>Date: {{ post.pub_date|date:"d.m.Y" }}</p>
+<p>Author: {{ post.author.username }}</p>
+<p>Category: {{ post.category.title }}</p>

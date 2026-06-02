@@ -6,6 +6,4 @@ def about(request):
 
 
 def rules(request):
-    return render(request, 'pages/rules.html')from django.shortcuts import render
-
-# Create your views here.
+    return render(request, 'pages/rules.html')

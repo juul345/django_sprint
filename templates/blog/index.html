@@ -1,0 +1,8 @@
+<h1>Main page</h1>
+{% for post in post_list %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text }}</p>
+    <p>Date: {{ post.pub_date|date:"d.m.Y" }}</p>
+{% empty %}
+    <p>No posts</p>
+{% endfor %}
